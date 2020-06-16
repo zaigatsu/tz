@@ -2644,6 +2644,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   inject: ['employeeRepository'],
   methods: {
@@ -4642,6 +4643,7 @@ var render = function() {
                     ? _c(
                         "app-btn",
                         {
+                          staticClass: "m-l-10",
                           attrs: { color: "error" },
                           on: { click: _vm.onDelete }
                         },

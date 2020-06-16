@@ -32,6 +32,7 @@
                     </app-btn>
                     <app-btn 
                         color="error" 
+                        class="m-l-10"
                         @click="onDelete" 
                         v-if="!isNewEmployee"
                     >
