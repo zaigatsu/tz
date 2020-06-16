@@ -85,7 +85,7 @@ export default {
             form: this.employeeRepository.fields(),
             rules: {
                 required: (val) => !!val || "Поле обязательно для заполнения",
-                date:  (val) => /\d{4}\-\d{2}\-\d{2}/.test(val) || "Неверный формат даты (хххх-хх-хх)"
+                date:  (val) => /\d{4}\-\d{2}\-\d{2}/.test(val) || "Неверный формат даты (ГГГГ-ММ-ДД)"
                     
             }
         }

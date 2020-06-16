@@ -2769,7 +2769,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
           return !!val || "Поле обязательно для заполнения";
         },
         date: function date(val) {
-          return /\d{4}\-\d{2}\-\d{2}/.test(val) || "Неверный формат даты (хххх-хх-хх)";
+          return /\d{4}\-\d{2}\-\d{2}/.test(val) || "Неверный формат даты (ГГГГ-ММ-ДД)";
         }
       }
     };
