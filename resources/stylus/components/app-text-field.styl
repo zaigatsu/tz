@@ -1,0 +1,49 @@
+@import("../vars.styl")
+
+.app-text-field
+    font-size 12px
+    width 100%
+    &.small 
+        width 33.3333333%
+    &.big
+        width 100%
+    &.medium
+        width 66.6666666%
+    .app-text-field__label
+        margin: 7px 0 7px 0;
+    .app-text-field__input
+        position relative
+        input
+            width 100%
+            border-radius 2px
+            border: 1px solid  rgb(156, 145, 138);
+            background-color: rgba(156, 145, 138, 0);  
+            padding: 10px;
+            color: defaultColorText;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button
+                appearance none
+            &.error
+                transition: all 0.3s ease
+                border-color colorError
+        .arrow
+            position absolute
+            display: inline-block
+            font-size: 18px
+            cursor: pointer
+            color inherit
+            &:hover
+                font-weight: bold
+            &.down
+                bottom 0px
+                right: 2px
+            &.up
+                top 0
+                right: 2px
+    .app-text-field__error
+        padding: 5px 0 5px 0
+        display inline-block
+        min-height: 20px
+        color colorError
+    &.error
+        color: colorError

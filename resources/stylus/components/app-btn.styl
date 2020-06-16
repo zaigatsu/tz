@@ -1,0 +1,49 @@
+@import "../vars.styl"
+    
+.app-btn
+    display inline
+    border 0px
+    cursor pointer
+    border-radius 2px
+    font-size 12px
+    position relative
+    width auto
+    align-self: baseline
+    &:disabled
+        background-color: #777 !important
+    &.default
+        &:hover
+            opacity 0.8
+    &.warning
+        background-color bgWarning
+        color #fff
+        &:hover
+            background-color #b0a7a1
+            opacity 0.8
+    &.success
+        background-color bgSuccess;
+        color #fff
+        &:hover
+            opacity 0.8
+    &.error
+        background-color bgError
+        color #fff
+        &:hover
+            opacity 0.8
+    &.small
+        padding 5px 10px
+    &.big
+        font-size 14px
+        padding 15px
+    .text
+        display: inline-block
+        padding 10px 15px
+    &.icon
+        padding: 10px;
+        font-size: 18px
+        display: flex
+        align-items center
+        justify-content center
+        .text
+            margin-left: 20px;
+            display inline-block

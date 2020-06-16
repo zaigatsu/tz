@@ -1,0 +1,55 @@
+.app-table-wrapper
+    border 1px solid rgba(255,255,255,0.1)
+    width: 100%
+    .app-table
+        width 100%
+        font-size: 14px
+        
+        .app-table__header
+            border-bottom 1px solid rgba(255,255,255,0.1)
+
+            .app-table__header__cell
+                border-right 1px solid rgba(255,255,255,0.1)
+                padding 10px
+                font-weight bold
+                background-color rgba(0, 0, 0, 0.2)
+                &:last-child
+                    border-right 0px solid rgba(255,255,255,0.1)
+        .app-table__body
+            .app-table__body__row
+                border-bottom 1px solid rgba(255,255,255,0.1)
+                &.hovered
+                    background-color: rgba(233,233,233,1)
+                    cursor pointer
+                .app-table__body__cell
+                    padding 10px
+                    border-right 1px solid rgba(255,255,255,0.1)
+                    &:last-child
+                        border-right 0px solid rgba(255,255,255,0.1)
+        &.hovered
+            .app-table__body
+                .app-table__body__row
+                    transition: all 0.3s ease
+                    &:hover
+                        background-color: rgba(255,255,255,0.1)
+                        cursor pointer
+                        transition: background-color 0.3s ease
+        &.ellipsis
+            .app-table__header 
+                .app-table__header__cell
+                    div
+                        white-space nowrap
+                        overflow hidden
+                        text-overflow ellipsis
+            .app-table__body
+                .app-table__body__row
+                    .app-table__body__cell
+                        div
+                            white-space wrap
+                            overflow hidden
+                            text-overflow ellipsis
+
+    .table-image-preview
+        height 50px
+        border 1px solid rgba(255,255,255,0.3)
+        border-radius 5px

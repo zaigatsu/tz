@@ -1,0 +1,48 @@
+@import "../func.styl"
+.app-content
+    width 100%
+    background-color transparent
+
+    .row 
+        display flex
+        flex-basis: 100%
+        flex-wrap wrap
+        align-items center
+    for num in (1..12) 
+        .col-md-{num}
+            display flex
+            flex-wrap: wrap
+            flex-basis calcColumnWidth(num)
+            max-width calcColumnWidth(num)
+            
+    @media screen and (min-width 576px )
+        for num in (1..12) 
+            .col-sm-{num}
+                display flex
+                flex-basis calcColumnWidth(num)
+                max-width calcColumnWidth(num)
+
+
+    @media screen and (min-width: 768px)
+        for num in (1..12) 
+            .col-md-{num}
+                display flex
+                flex-basis calcColumnWidth(num)
+                max-width calcColumnWidth(num)
+
+    @media screen and (min-width: 992px)
+        for num in (1..12) 
+            .col-lg-{num}
+                display flex
+                flex-basis calcColumnWidth(num)
+                max-width calcColumnWidth(num)
+
+    @media screen and (min-width: 1200px)
+        for num in (1..12) 
+            .col-xl-{num}
+                display flex
+                flex-basis calcColumnWidth(num)
+                max-width calcColumnWidth(num)
+    
+    
+    
