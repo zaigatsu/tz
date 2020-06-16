@@ -4,15 +4,17 @@
         <app-row>
             <app-col :md="2"></app-col>
             <app-col :md="8">
+                <app-page-title title="Список сотрудников" />
                 <app-row class="p-t-20 p-b-20">
                     <app-btn 
+                        class="m-l-20"
                         color="success" 
                         @click="onAddEmployee"
                     >
                         Добавить сотрудника
                     </app-btn>
                 </app-row>
-                <app-row>
+                <app-row class="p-20">
                     <app-table 
                         :headers="headers"
                         :items="items"

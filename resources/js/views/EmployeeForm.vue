@@ -15,8 +15,9 @@
                         label="Дата рождения"
                         v-model="form.birthdate"
                         :rules="[
+                            rules.date,
                             rules.required,  
-                            rules.date
+
                         ]"
                     />
                     <app-text-field
